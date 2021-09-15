@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Machine(models.Model):
+class MachineService(models.Model):
     machine_name = models.CharField(max_length=50)
     machine_make = models.CharField(max_length=200)
     service_date = models.DateField()
