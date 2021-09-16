@@ -1,0 +1,19 @@
+<!-- templates/machines/service_list.html -->
+
+{% extends 'base.html' %}
+{% block content %}
+{% for service in service_list %}
+    <div>
+        <ul>
+            <li>
+                <p><b>Machine Name: {{ service.machine_name }}</b></p>  
+                <p>Machine Make: {{ service.machine_make }}</p>
+                <p>Service Date: {{ service.service_date }}</p>
+                <p>Next Service Date: {{ service.next_service_date }}</p>
+                <p>Comments: {{ service.service_comments }}</p>
+                <p>Comments: {{ service.serviced_by }}</p>
+            </li>
+        </ul>
+    </div>
+{% endfor %}
+{% endblock content %}

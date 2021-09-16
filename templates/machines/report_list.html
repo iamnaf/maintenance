@@ -1,0 +1,19 @@
+<!-- templates/report_list -->
+
+{% extends 'base.html' %}
+{% block content %}
+{% for report in report_list %}
+    <div>
+         <ul>
+            <li>
+                <p>Machine Name: {{ report.machine_name }}</p>  
+                <p>Operator Name: {{ report.operator_name }}</p>
+                <p>Maintenance Personnel: {{ report.maintenance_personnel }}</p>
+                <p>Issue: {{ report.issue }}</p>
+                <p>Comments: {{ report.comments }}</p>
+                <p>Date: {{ report.report_date }}</p>
+            </li>
+        </ul>
+    </div>
+{% endfor %}
+{% endblock content %}

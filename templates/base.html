@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <title>Maintenance Department</title>
+    </head>
+            <div>
+            <h1><a href="{% url 'home' %}">United Foam Products Maintenance Team</a></h1>
+        </div>
+        <div>
+            <div>
+                <a href=#>Log in | Log out</a>
+                <h1><p>Welcome</p></h1>
+            </div>
+            <div>
+                <p><a href="{% url 'report_new' %}">Create New Issue Report</a><br>
+                <a href="{% url 'service_new' %}">Create New Service Report</a></p>
+            </div>
+            
+                
+        </div>
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>      
+</html>
