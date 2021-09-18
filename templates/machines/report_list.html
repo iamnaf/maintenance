@@ -4,7 +4,7 @@
 {% block content %}
 {% for report in report_list %}
     <div>
-         <ul>
+         <ol start="1">
             <li>
                 <p>Machine Name: {{ report.machine_name }}</p>  
                 <p>Operator Name: {{ report.operator_name }}</p>
@@ -13,7 +13,7 @@
                 <p>Comments: {{ report.comments }}</p>
                 <p>Date: {{ report.report_date }}</p>
             </li>
-        </ul>
+        </ol>
     </div>
 {% endfor %}
 {% endblock content %}
